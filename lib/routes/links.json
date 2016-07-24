@@ -1,0 +1,20 @@
+[
+    {
+        "category": "study",
+        "title": "Keeleklikk",
+        "url": "https://www.keeleklikk.ee/",
+        "screenshot": "keeleklikk.png"
+    },
+    {
+        "category": "study",
+        "title": "Memrise",
+        "url": "http://www.memrise.com/home/",
+        "screenshot": "memrise.png"
+    },
+    {
+        "category": "study",
+        "title": "Khan Academy",
+        "url": "https://www.khanacademy.org/",
+        "screenshot": "khanacademy.png"
+    }
+]
