@@ -11,3 +11,11 @@ script:
 - travis_retry npm run build
 - travis_retry npm run lint
 - travis_retry npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: dpwvPT4XJXqOGfybaDJA2iXiLvCqVoEhi2YL3BXHqT9MvTiBjpddstoikwBfSFERrSP4raY08Cv0QDjNnNaV+jSGFtDO/P6lVvZHsMaBh/9eN7/Tt10NLjgLJy0u8dRnUSlc/fQHkhN0Kh3DQ3Ik9NuZxVe+EUsu7NzJClTodRwH3S1W97XfYJFPhNxakBjS/gTgjpRKP30XqzgHSfHA0lsv71t1/43Hs4XwpIBMGsMjv12xFrcPpItE4vmXPS0eR1CEJMcrXxSSNHzsSSAawF4k8Q70L515hEULCq6+9g6HXlumw91ByFqVUIc72dvfPa+5yI/nLPlCRPq7G2D8r0/jWbueo7pCO3uY9ni2khWEAgF7ydME80qeXZyfFhTI6CKwtltgKhuEGJyQJje/vuU83nnwxqX7s4/i4V+F70NGc9Gk3OmWKZIkkjYFc3c5432WOSrTKxVQ4sLdorr02eEIUWsp3NjkV4Gx3slNs1YSpBrLppeDB3xjXy5d2MW6k7t6JWj6vhoDqUpTXN9dlgQqEEymLxw510QYcJJUgQOONLeAocHCDEFUJ3IbBOH67BqiKjQMmVkFSMmRdIKNDu7wsMr0aeKaGRGoNP/7MP8mFJ8jXzm2UPUh6wv3BJh7222mv5wCop3f+dy3hg2GO3Pr8RPNLodHsiUexDaziCg=
+  app: ancient-tundra-31260
+  on:
+    repo: jseminck/jseminck-be-api-links
+  skip_cleanup: true
